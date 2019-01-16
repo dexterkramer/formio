@@ -1,0 +1,4 @@
+
+
+<div *ngIf="width != null" [ngStyle]="{'width.px': width}" ><formio [form]="form" (submit)="onSubmit($event)" ></formio></div>
+<div *ngIf="width == null"><formio [form]="form" (submit)="onSubmit($event)" ></formio></div>

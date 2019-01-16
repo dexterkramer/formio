@@ -1,0 +1,10 @@
+<div class="container">
+  <form-builder [form]="form"></form-builder><br/><br/>
+  Nom du formulaire : <input type="text" [(ngModel)]="name"/><br/>
+  Url d'envoie : <input type="text" [(ngModel)]="formAction"/><br/>
+  Largeur du formulaire : <input type="text" [(ngModel)]="width"/><br/>
+  <button (click)="save()"> save</button>
+  
+</div>
+<!--
+<formio [form]="formRender" (render)="render()"(submit)="onSubmit($event)" ></formio>-->
