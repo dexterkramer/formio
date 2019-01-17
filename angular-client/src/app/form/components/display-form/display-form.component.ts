@@ -37,6 +37,7 @@ export class DisplayFormComponent implements OnInit {
    };
 
    onSubmit(submission: any) {
+    console.log(submission);
     return fetch(this.formAction, {
           body: JSON.stringify(submission),
           headers: {

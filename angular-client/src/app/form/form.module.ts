@@ -3,15 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormioGrid } from 'angular-formio/grid';
 import { FormComponent } from './components/form/form.component';
-import { FormioModule, FormioAppConfig } from 'angular-formio';
+import { FormioModule } from 'angular-formio';
 import { GenerateFormComponent } from './components/generate-form/generate-form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { DisplayFormComponent } from './components/display-form/display-form.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     FormioGrid,
     FormioModule,
     RouterModule.forChild([{
